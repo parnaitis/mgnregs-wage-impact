@@ -1,0 +1,32 @@
+
+CAUSAL (Two-Way FE DiD) vs PREDICTIVE (LightGBM) — MODEL COMPARISON
+=====================================================================
+West Bengal District Panel, 2018-2024
+Dependent variable: log(Average Daily Wage)
+
+PREDICTIVE MODEL (LightGBM)
+-----------------------------
+  Purpose      : Maximize prediction accuracy
+  CV R²        : 0.258 (± 0.140)
+  CV MAE       : 0.0964 log-wage units
+  Key features : See SHAP plots
+  Limitation   : Cannot tell us WHETHER spending CAUSES wages to rise.
+                 High R² may reflect reverse causation or omitted variables.
+
+CAUSAL MODEL (Two-Way Fixed Effects DiD)
+-----------------------------------------
+  Purpose      : Estimate causal effect of MGNREGS spending on wages
+  Identification: District FE (removes time-invariant confounders)
+                  Year FE (removes common macro shocks like COVID, inflation)
+                  Clustered SE (accounts for within-district serial correlation)
+  Coefficient  : See outputs/tables/regression_results.txt
+  Interpretation: β = % change in wage for 1% increase in MGNREGS expenditure,
+                  AFTER controlling for all time-invariant district characteristics
+                  and all common year effects.
+
+WHY THIS MATTERS FOR POLICY
+-----------------------------
+  A high LightGBM R² tells us we can PREDICT which districts will have
+  high wages. The DiD β tells us whether SPENDING MORE on MGNREGS in a
+  district actually CAUSES wages to rise — a completely different question,
+  and the one policymakers actually need answered.
