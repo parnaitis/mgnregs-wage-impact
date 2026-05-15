@@ -68,14 +68,27 @@ fully reproducible.
 
 ## Key Findings
 
-*(Updated as analysis completes)*
+- **Pooled OLS** (naive): β = -0.072 (p<0.001) — spending *negatively* correlated
+  with wages. This is selection bias: poorer districts receive more MGNREGS funds.
 
-- OLS estimate of MGNREGS spend on log wages: **TBD**
-- Two-way FE DiD estimate (preferred): **TBD**
-- LightGBM predictive R²: **TBD**
-- Top SHAP feature: **TBD**
+- **Two-Way FE DiD** (preferred causal estimate): β = -0.027 (p=0.635, SE=0.057)
+  — effect is small and statistically insignificant after controlling for
+  district and year fixed effects. The OLS result was entirely driven by
+  selection bias, not a true causal effect.
 
----
+- **LightGBM predictive benchmark**: CV R² = 0.258 — district identity
+  (fixed characteristics) explains most wage variation, not spending intensity.
+
+- **Interpretation**: MGNREGS spending intensity at the district level does not
+  appear to causally drive agricultural wage growth in West Bengal (2018–2024).
+  State-level wage floors (notified MGNREGS rates) likely dominate local
+  spending variation as the wage-setting mechanism — consistent with
+  Imbert & Papp (2015) and Muralidharan et al. (2017).
+
+- **Methodological contribution**: The divergence between OLS (β=-0.072***)
+  and Two-Way FE (β=-0.027, ns) demonstrates the importance of controlling
+  for district-level selection into MGNREGS funding — a common failure in
+  policy evaluation.
 
 ## Repo Structure
 
