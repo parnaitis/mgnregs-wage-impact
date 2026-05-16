@@ -3,8 +3,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://YOUR-APP-URL.streamlit.app)
-
 ---
 
 ## Research Question
@@ -181,9 +179,10 @@ lightgbm==4.3.0
 shap==0.45.0
 linearmodels==6.0
 scikit-learn==1.4.2
-statsmodels
-beautifulsoup4
-lxml
+statsmodels==0.14.2
+beautifulsoup4==4.12.3
+lxml==5.2.2
+pillow==10.3.0
 ```
 
 ---

@@ -1,38 +1,9 @@
-\# Data Sources Log
+# Data Sources Log
 
-
-
-\## MGNREGS Expenditure
-
-\- URL: https://nreganarep.nic.in/netnrega/home.aspx
-
-\- Downloaded: 2026-05-14
-
-\- Files: mgnregs\_FY\_2011.csv ... mgnregs\_FY\_2022.csv
-
-\- Notes: Financial year April-March. Figures in Rs. lakhs.
-
-
-
-\## PLFS Rural Wages
-
-\- URL: https://mospi.gov.in/web/plfs/reports
-
-\- Downloaded: 2026-05-14
-
-\- Files: plfs\_2017.xlsx ... plfs\_2022.xlsx
-
-\- Notes: Daily wages, rural sector, agricultural workers
-
-
-
-\## District Shapefiles
-
-\- URL: https://github.com/datameet/maps/tree/master/Districts
-
-\- Downloaded: 2026-05-14
-
-\- File: 2011\_Dist.zip
-
-\- Notes: 2011 Census district boundaries
-
+## MGNREGS District-Level MIS Data
+- URL: https://data.gov.in/resource/district-wise-mgnrega-data-glance
+- Downloaded: 2026-05-15
+- Files: wb_2018.csv, wb_2019.csv, wb_2020.csv, wb_2021.csv, wb_2022.csv, wb_2023.csv, wb_2024.csv
+- Notes: Monthly district-level data for West Bengal. Variables include average daily wage,
+  total expenditure (Rs. lakhs), person-days generated, SC/ST shares, women's participation.
+  Financial years 2018-19 through 2024-25. Downloaded one file per financial year.
