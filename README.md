@@ -63,7 +63,6 @@ removing that selection problem and producing a credible causal estimate.
 | Causal estimation | Two-way fixed effects DiD (district + year FE), clustered SE | `linearmodels` |
 | Robustness check | Year-by-year event study plot, parallel trends visual | `linearmodels` |
 | Predictive benchmark | LightGBM with 5-fold CV, SHAP feature importance | `lightgbm`, `shap` |
-| Dashboard | Interactive district explorer, regression results viewer | `streamlit` |
 
 ### Core Model
 
