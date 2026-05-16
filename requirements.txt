@@ -5,7 +5,8 @@ streamlit==1.35.0
 lightgbm==4.3.0
 shap==0.45.0
 linearmodels==6.0
-scikit-learn
-statsmodels
-beautifulsoup4
-lxml
+scikit-learn==1.4.2
+statsmodels==0.14.2
+beautifulsoup4==4.12.3
+lxml==5.2.2
+pillow==10.3.0
